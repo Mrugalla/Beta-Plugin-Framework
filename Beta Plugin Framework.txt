@@ -1,0 +1,187 @@
+-------------------------------- BETA PLUGIN FRAMEWORK
+by Florian Mrugalla
+
+but open for pull requests in case of additional ideas
+or for fixing typos and other mistakes!
+:)
+
+-------------------------------- TESTING STAGES OF THE DEVELOPER
+1. Steinberg VST3 Validator
+2. Pluginval
+3. Some DAWs
+
+-------------------------------- CAUTION TO DEVELOPER
+Check if your build is compatible with beta tester's setup.
+
+OS
+	Windows/Mac/Linux
+DAW
+	Does it support the plugin features?
+Plugin Properties
+	VST2/3, Clap etc.
+	32bit/64bit
+
+-------------------------------- CAUTION TO BETA TESTER
+Always use a brickwall limiter on master bus
+in case of unintentional feedback loops and other
+bugs that can hurt your ears and damage your gear!
+
+-------------------------------- USING AN EXAMPLE
+To test this framework, I will use my own plugin release,
+NEL, as an example for the various aspects of beta testing.
+NEL is a VST3 plugin with diverse ways to modulate a
+feed-forward delay in order to apply vibrato to a signal.
+Whenever some testing aspect explains an aspect of NEL it is
+marked with "e.g.".
+
+-------------------------------- USER TYPES (not a hierarchy. combinations possible.)
+BEGINNER
+	Just started music production.
+	Has not internalized anything yet.
+	Drag types of knobs make a big difference.
+	Visibility and good labels.
+ROOKIE
+	Some years of experience.
+	Might not know about scrollwheel- and modifier keys yet.
+	e.g. user dials in simple LFOs and randomized modulators.
+ADVANCED
+	Pretty much every dedicated plugin user.
+	e.g. user can combine the output of multiple modulators.
+SOUNDDESIGNER
+	Elevated interest in crafting individual sounds rather than finishing tracks.
+	e.g. user needs to know what audio rate modulation is
+DSP NERD
+	e.g. user needs to know how the buffer size of a delay relates to the depth parameter
+ANALOG GEARHEAD
+	Prefers limited plugin features over digital sounds and looks.
+MUSIC PRODUCER
+	Wants an easy and streamlined workflow. (Quantity > Quality)
+MIXING ENGINEER
+	Mixes a song.
+	e.g. oversampling for a cleaner vibrato-sound on complex signals.
+PRE-MASTERING ENGINEER
+	Applies finishing touches to a song's master bus.
+MASTERING ENGINEER
+	Applies finishing touches to a collection of related songs.
+
+-------------------------------- A PLUGIN IS ASSUMED TO HAVE
+1. A TARGET AUDIENCE
+	Sex
+		e.g. undefined
+	Age
+		e.g. likely >18
+	Skill Level
+		e.g. rookies
+		e.g. sounddesign nerds
+		e.g. dsp nerds
+	Audio Job
+		e.g. beat makers, sounddesigners, mixing engineers
+	Passion for digital music
+		e.g. high
+	Willingness to pay for plugins
+		e.g. low or medium
+2. FUNCTIONS
+	2.1 Technological function(s)
+		e.g. have a complex modulation system.
+		e.g. have a feed-forward delay.
+		e.g. use the modulation system's output to modulate the delay.
+	2.2 Musical function(s)
+		e.g. add vibrato to a signal.
+		e.g. add scratches to a signal.
+		e.g. add timing & pitch variations to a signal.
+		e.g. phase distort a signal. (Audiorate Mod)
+		e.g. add tape-y pitch dropouts.
+	2.3 Visionary function(s)
+		e.g. promote relevance of vibrato in music.
+		e.g. shift people's mindsets on usefulness of different vibrato modulation types.
+		e.g. make the swiss army knife of vibrato.
+	2.4 Branding function(s)
+		e.g. Mrugalla plugins give existing technological ideas a new spin by combining them in new ways.
+
+-------------------------------- TESTING STAGES OF BETA TESTERS
+1. FIRST IMPRESSION
+	The beta tester is given at least one screenshot
+	or a video without audio.
+
+	1.1 How much does the GUI explain itself just from looking at it?
+		1.1.1 How obvious is the signal flow?
+	1.2 How appealing / aesthetical does the GUI look?
+		1.2.1 Does the overall style fit the supposed target audience.
+			e.g. Flat interface for digital music producers.
+	1.3 How functional does the GUI look?
+		Check for unfortunately placed parameters.
+		Check for empty / unused spaced.
+2. BLIND TEST
+	The beta tester is given a plugin built, but no manual or
+	explanation of the plugin's function(s).
+	
+	2.1 How much does the plugin explain itself?
+		2.1.1 Which functions are overlooked?
+		2.1.2 Does the user find new unexpected functions?
+	2.2 How much are the plugin's features being noticed?
+		2.1. OVERLOOKED MOSTLY
+			e.g. people rarely find the buffersize feature.
+			e.g. using more than 1 macro modulator.
+			e.g. adjusting the interpolation type.
+		2.2 NOTICED RARELY
+			e.g. mixing 2 modulators with each other.
+			e.g. dialing in macro modulation.
+		2.3 NOTICED SOMETIMES
+			e.g. different modulation types in drop-down menu.
+		2.4 NOTICED A LOT
+			e.g. stereo-width, mid/side.
+		2.5 ALWAYS USED
+			e.g. depth, speed, mix.
+3. EXPLAINED TEST
+	The user is informed about the plugin's functions,
+	but without explaining how to accomplish them.
+	e.g. You can use the plugin to add livelyness to a sterile drum part.
+	
+	3.1 How does the user approach the plugin now?
+		3.1.1 In which way(s) is it different?
+		3.1.2 In which way(s) is it similiar?
+		3.1.3 Does the user succeed to accomplish the plugin function?
+
+4. INFORMED TEST
+	The user is told how to accomplish the plugin's functions.
+	
+	4.1. The user rates how likely it would be that another user accomplishes the functions.
+
+5. STRESS TEST
+	The user is told to play around with the plugin in the context of
+	some actual practical work (beat, song etc.)
+	
+	5.1 Find out in which kind of situations the user chooses the plugin.
+		5.1.1 If the user decides against it, why?
+
+-------------------------------- TYPES OF DOCUMENTATION
+
+1. VIDEO
+	1.1 UNEDITED
+		How does the user navigate the plugin interface?
+		What does the user's facial expression reveal?
+	1.2 EDITED
+		Which usecases are highlighted in the video?
+2. TEXT
+
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+--------------------------------
+-------------------------------- THINGS THAT DONT HAVE A CATEGORY YET
+cpu/ram performance
+logging
+requests
+	features,
+	workflow
+	design
+reports
+	bug

@@ -176,12 +176,18 @@ MASTERING ENGINEER
 --------------------------------
 --------------------------------
 --------------------------------
--------------------------------- THINGS THAT DONT HAVE A CATEGORY YET
+-------------------------------- NOTES / THINGS THAT DONT HAVE A CATEGORY YET
 cpu/ram performance
 logging
 requests
-	features,
+	features
+	soundquality
+		interpolation
 	workflow
+		controls
+		layout
 	design
+		colours
+		style
 reports
 	bug

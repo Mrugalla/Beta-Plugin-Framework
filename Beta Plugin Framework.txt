@@ -51,6 +51,7 @@ SOUNDDESIGNER
 	Elevated interest in crafting individual sounds rather than finishing tracks.
 	e.g. user needs to know what audio rate modulation is
 DSP NERD
+	Trys to identify the underlying mechanisms for satisfaction.
 	e.g. user needs to know how the buffer size of a delay relates to the depth parameter
 ANALOG GEARHEAD
 	Prefers limited plugin features over digital sounds and looks.
@@ -70,55 +71,70 @@ MASTERING ENGINEER
 		e.g. undefined
 	Age
 		e.g. likely >18
-	Skill Level
+	SKILL LEVEL
 		e.g. rookies
 		e.g. sounddesign nerds
 		e.g. dsp nerds
-	Audio Job
+	AUDIO JOB
 		e.g. beat makers, sounddesigners, mixing engineers
-	Passion for digital music
+	PASSION FOR DIGITAL MUSIC
 		e.g. high
-	Willingness to pay for plugins
+	WILLINGNESS TO PAY FOR PLUGINS
 		e.g. low or medium
 2. FUNCTIONS
 	2.1 Technological function(s)
+		The DSP/Workflow architectures the plugin is composed of.
+		
 		e.g. have a complex modulation system.
 		e.g. have a feed-forward delay.
 		e.g. use the modulation system's output to modulate the delay.
 	2.2 Musical function(s)
+		The ways in which the technological functions are musical.
+		
 		e.g. add vibrato to a signal.
 		e.g. add scratches to a signal.
 		e.g. add timing & pitch variations to a signal.
 		e.g. phase distort a signal. (Audiorate Mod)
 		e.g. add tape-y pitch dropouts.
 	2.3 Visionary function(s)
+		The ways in which the musical functions give meaning to productions.
+	
 		e.g. promote relevance of vibrato in music.
 		e.g. shift people's mindsets on usefulness of different vibrato modulation types.
 		e.g. make the swiss army knife of vibrato.
 	2.4 Branding function(s)
+		The ways in which the plugin sets the tone of the developer's brand.
+	
 		e.g. Mrugalla plugins give existing technological ideas a new spin by combining them in new ways.
 
 -------------------------------- TESTING STAGES OF BETA TESTERS
 1. FIRST IMPRESSION
 	The beta tester is given at least one screenshot
-	or a video without audio.
+	or a video without audio. They are asked what the
+	plugin probably does, why it was probably made and
+	which users it probably appeals to.
 
 	1.1 How much does the GUI explain itself just from looking at it?
 		1.1.1 How obvious is the signal flow?
+		1.1.2 Does the GUI convey what the plugin is useful for?
+		1.1.3 Which elements cause misunderstandings?
 	1.2 How appealing / aesthetical does the GUI look?
 		1.2.1 Does the overall style fit the supposed target audience.
 			e.g. Flat interface for digital music producers.
 	1.3 How functional does the GUI look?
 		Check for unfortunately placed parameters.
 		Check for empty / unused spaced.
+	1.4 Vibe Check
+		1.4.1 Does the plugin look hard to use, or easy?
+
 2. BLIND TEST
-	The beta tester is given a plugin built, but no manual or
-	explanation of the plugin's function(s).
+	The beta tester is given a plugin build, but no manual or
+	explanation of the plugin's function(s) yet.
 	
-	2.1 How much does the plugin explain itself?
+	2.1 To what extend does the plugin explain itself?
 		2.1.1 Which functions are overlooked?
 		2.1.2 Does the user find new unexpected functions?
-	2.2 How much are the plugin's features being noticed?
+	2.2 How much are the plugin's functions being noticed?
 		2.1. OVERLOOKED MOSTLY
 			e.g. people rarely find the buffersize feature.
 			e.g. using more than 1 macro modulator.
@@ -132,20 +148,21 @@ MASTERING ENGINEER
 			e.g. stereo-width, mid/side.
 		2.5 ALWAYS USED
 			e.g. depth, speed, mix.
+
 3. EXPLAINED TEST
 	The user is informed about the plugin's functions,
 	but without explaining how to accomplish them.
 	e.g. You can use the plugin to add livelyness to a sterile drum part.
 	
 	3.1 How does the user approach the plugin now?
-		3.1.1 In which way(s) is it different?
-		3.1.2 In which way(s) is it similiar?
-		3.1.3 Does the user succeed to accomplish the plugin function?
+		3.1.1 In which way(s) is it different or similiar?
+		3.1.2 Does the user succeed to accomplish the plugin function?
 
 4. INFORMED TEST
 	The user is told how to accomplish the plugin's functions.
 	
-	4.1. The user rates how likely it would be that another user accomplishes the functions.
+	4.1 The user rates how likely it would be that another user accomplishes the functions.
+	4.2 The user attempts to formulate the reason why certain functions weren't obvious at first. 
 
 5. STRESS TEST
 	The user is told to play around with the plugin in the context of
@@ -160,11 +177,38 @@ MASTERING ENGINEER
 	1.1 UNEDITED
 		How does the user navigate the plugin interface?
 		What does the user's facial expression reveal?
+		Where does the user get stuck?
 	1.2 EDITED
-		Which usecases are highlighted in the video?
+		Which functions are highlighted in the video?
+	1.3 BOTH
+		What seems most fun?
+		Which other plugins need to be used to use this plugin?
 2. TEXT
 
---------------------------------
+-------------------------------- EXPECTATIONS FROM THE DEVELOPER
+
+Considering a developer is open for all kinds of criticism,
+here are potential categories of criticism:
+
+1. BUGS
+	1.1 Audio/DSP Bugs
+2. REQUESTS
+	2.1 Features
+		2.1.1 Features that could still fit into this plugin.
+		2.1.2 Features that are potentially outside the scope.
+	2.2 Soundquality
+		2.2.1 Some sounds are not 'broken', but could just be better.
+	2.3 Workflow
+		2.3.1 When the interface makes certain aspects inconvenient.
+		2.3.2 When the interface makes it almost impossible to accomplish certain tasks.
+		2.3.3 When the controls are acting in an unusual/unexpected way.
+		2.3.4 When the layout feels confusing.
+	2.4 Design
+		2.4.1 When the design distracts from the function of the plugin.
+		2.4.2 When the design is not appealing.
+		2.4.3 When the colours make things hard to look at.
+		2.4.4 When certain controls or labels are too small or blurry.
+
 --------------------------------
 --------------------------------
 --------------------------------
@@ -179,15 +223,3 @@ MASTERING ENGINEER
 -------------------------------- NOTES / THINGS THAT DONT HAVE A CATEGORY YET
 cpu/ram performance
 logging
-requests
-	features
-	soundquality
-		interpolation
-	workflow
-		controls
-		layout
-	design
-		colours
-		style
-reports
-	bug

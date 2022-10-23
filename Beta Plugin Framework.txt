@@ -174,16 +174,19 @@ MASTERING ENGINEER
 -------------------------------- TYPES OF DOCUMENTATION
 
 1. VIDEO
-	1.1 UNEDITED
+	1.1 Advantage of revealing the way a plugin is being used.
+	1.2 UNEDITED
 		How does the user navigate the plugin interface?
 		What does the user's facial expression reveal?
 		Where does the user get stuck?
-	1.2 EDITED
+	1.3 EDITED
 		Which functions are highlighted in the video?
-	1.3 BOTH
+	1.4 BOTH
 		What seems most fun?
 		Which other plugins need to be used to use this plugin?
 2. TEXT
+	2.1 Advantage of being a fast communicative process.
+		You can discuss misunderstandings better than via videos.
 
 -------------------------------- EXPECTATIONS FROM THE DEVELOPER
 

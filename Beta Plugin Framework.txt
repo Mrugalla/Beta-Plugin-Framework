@@ -24,7 +24,11 @@ Plugin Properties
 -------------------------------- CAUTION TO BETA TESTER
 Always use a brickwall limiter on master bus
 in case of unintentional feedback loops and other
-bugs that can hurt your ears and damage your gear!
+bugs that can hurt or damage your ears or gear!
+
+Don't use the plugin in important projects, because
+changes made in response to beta tester feedback
+might affect the behaviour of the final plugin.
 
 -------------------------------- USING AN EXAMPLE
 To test this framework, I will use my own plugin release,
